@@ -41,6 +41,7 @@ public class B2d implements Screen {
     public void render(float delta) {
         Gdx.gl.glClearColor(0,0,0,1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+        camera.position.set(car.chassis.getPosition().x,car.chassis.getPosition().y,0);
         camera.update();
         box2DDebugRenderer.render(world,camera.combined);
         world.step(time,velocityint,velocityasd);

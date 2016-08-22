@@ -16,7 +16,7 @@ import com.badlogic.gdx.physics.box2d.joints.WheelJointDef;
  * Created by m on 2016-08-22.
  */
 public class Car extends InputAdapter implements Screen{
-    private Body chassis,leftWheel,rightWheel;
+    public Body chassis,leftWheel,rightWheel;
     private WheelJoint leftAxix,rightAxix;
     private float speedEngine = 100;
     Car(World world, FixtureDef chassisFixtureDef,FixtureDef wheelFixtureDef,float x, float y,float width,float height){
